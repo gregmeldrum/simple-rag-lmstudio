@@ -1,6 +1,6 @@
 # Simple RAG example using LM Studio Server
 
-Start the LM Studio server running on port `1234`
+Start LM Studio server running on port `1234`.
 
 This repo performs 3 functions:
 
