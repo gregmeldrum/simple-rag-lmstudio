@@ -11,7 +11,7 @@ main.py runs all 3 functions.
 Once the scraper and embeddings have been completed once, they do not need to be run again. You can simply run the chatbot.py file.
 
 ## How to Run
-Prerequisite: Run an LM Studio Server
+Prerequisite: Run an [LM Studio Server](lmStudio.png)
 
 Download the code:
 
