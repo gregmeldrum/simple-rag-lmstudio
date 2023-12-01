@@ -23,7 +23,7 @@ cd simple-rag-lmstudio
 Optional - setup a virtual environment:
 
 ```
-virtualenv venv
+python -m venv venv
 source venv/bin/activate
 ```
 
