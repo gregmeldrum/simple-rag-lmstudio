@@ -29,25 +29,15 @@ llm = OpenAI(
        openai_api_key='dummy-key'
        )
 
-#llm = LlamaCpp(
-#    model_path="./models/zephyr-7b-alpha.Q6_K.gguf",
-#    temperature=temperature,
-#    max_tokens=256,
-#    n_ctx=4096,
-#    top_p=0.95,
-#    n_gpu_layers=n_gpu_layers,
-#    n_batch=n_batch,
-#    #callback_manager=callback_manager,
-#    verbose=True,
-#)
-
 ## Follow the default prompt style from the OpenOrca-Platypus2 huggingface model card.
 
 def get_prompt():
-  return """<|system|>Use the following Context information to answer the user's question. If you don't know the answer, just say that you don't know, don't try to make up an answer.</s>
-<|user|>Context: {context}
-User Question: {question}</s>
-<|assistant|>
+  return """Use the following Context information to answer the user's question. If you don't know the answer, just say that you don't know, don't try to make up an answer.
+### Instruction:
+Context: {context}
+User Question: {question}
+###
+Response:
 """
 
 def wrap_text_preserve_newlines(text, width=110):
